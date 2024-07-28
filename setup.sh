@@ -22,7 +22,7 @@ if [ $m2m100_installed -eq 0 ]; then echo "[x] M2M100"; else echo "[ ] M2M100"; 
 
 check_model "./src/lm_finetune/small100/model/model_small100_fairseq.pt"
 small100_installed=$?
-if [ $small100_installed -eq 0 ]; then echo "[x] SMaLL100"; else echo "[ ] SMaLL100"; fi
+if [ $small100_installed -eq 0 ]; then echo "[x] SMaLL100"; else echo "[ ] SMaLL100"; fi 
 
 # Create an array for choices
 choices=()

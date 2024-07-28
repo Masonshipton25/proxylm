@@ -14,6 +14,8 @@ from skopt.space import Categorical, Real, Integer
 from ..utils import *
 from .generic_model import GenericModelPipeline, GenericResultAggregator
 
+from sklearn.preprocessing import StandardScaler
+
 class XGBPipeline(GenericModelPipeline):
     def __init__(self, model_name, score_name, xgb_json, **kwargs):
         with open(xgb_json, 'r') as file:
