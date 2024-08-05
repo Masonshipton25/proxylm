@@ -26,7 +26,7 @@ np.int = int
 SCORE_COLUMNS = ['spBLEU_mean', 'spBLEU_se', 'chrF2++_mean', 'chrF2++_se',
                  'BLEU_mean', 'BLEU_se', 'chrF2_mean', 'chrF2_se',
                  'TER_mean', 'TER_se', 'comet_score_mean', 'comet_score_se']
-LANG_FEATURES = ["genetic", "geographic", "syntactic", "inventory", "phonological", "featural", "morphological"]
+LANG_FEATURES = ["genetic", "geographic", "syntactic", "inventory", "phonological", "featural"]
 
 M2M100_UNSEEN_LANGUAGES = ['asm', 'dik', 'ewe', 'fao', 'hne', 'kab', 'kin', 'kir', 'lmo', 'mri',
                            'sna', 'tat', 'tel', 'tgk', 'tuk', 'uig',
@@ -104,23 +104,23 @@ def get_dataframe_nusa(remove_useless_columns=True):
 def get_all_features_combinations():
     combs = []
     
-    # All
-    combs.append({"nlperf_only": False,
-                  "dataset_features": True,
-                  "lang_features": True,
-                  "with_trfm": True,
-                  "with_small100_ft": True,
-                  "with_small100_noft": True,
-                  "with_model_noft": True})
-    
-    # # Language features only
+    # # All
     # combs.append({"nlperf_only": False,
-    #               "dataset_features": False,
+    #               "dataset_features": True,
     #               "lang_features": True,
-    #               "with_trfm": False,
-    #               "with_small100_ft": False,
-    #               "with_small100_noft": False,
-    #               "with_model_noft": False})
+    #               "with_trfm": True,
+    #               "with_small100_ft": True,
+    #               "with_small100_noft": True,
+    #               "with_model_noft": True})
+    
+    # Language features only
+    combs.append({"nlperf_only": False,
+                  "dataset_features": False,
+                  "lang_features": True,
+                  "with_trfm": False,
+                  "with_small100_ft": False,
+                  "with_small100_noft": False,
+                  "with_model_noft": False})
     
     # # NLPerf features only
     # combs.append({"nlperf_only": True,
@@ -169,7 +169,7 @@ def select_features(df, model_name, score_name="spBLEU", include_lang_cols=False
                             "dataset_size", "train_word_vocab_size", "dev_word_vocab_size", "test_word_vocab_size",
                             "avg_train_sentence_length", "avg_dev_sentence_length", "avg_test_sentence_length",
                             "train_dev_word_overlap", "train_test_word_overlap", "dev_test_word_overlap", "ttr_train",
-                            "ttr_dev", "ttr_test", "train_dev_ttr_distance", "train_test_ttr_distance", "dev_test_ttr_distance", "morphological"]
+                            "ttr_dev", "ttr_test", "train_dev_ttr_distance", "train_test_ttr_distance", "dev_test_ttr_distance"]
         # For columns that got filtered out for Nusa dataset
         remove_cols = []
         for col in columns_features:

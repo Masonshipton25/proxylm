@@ -1,2 +1,0 @@
-python -m src.proxy_regressor.main -em random -r xgb -rj src\proxy_regressor\regressor_configs\xgb_config_mt560_m2m100.json -d nusa -m m2m100
-python -m src.proxy_regressor.main -em random -r xgb -rj src\proxy_regressor\regressor_configs\xgb_config_mt560_nllb.json -d nusa -m nllb

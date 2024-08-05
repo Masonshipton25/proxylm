@@ -1,2 +1,0 @@
-cv_rmse,test_rmse,genetic_importance,geographic_importance,syntactic_importance,inventory_importance,phonological_importance,featural_importance,eta,n_estimators,cv_rmse_se,test_rmse_se,nlperf_only,dataset_features,lang_features,with_trfm,with_small100_ft,with_small100_noft,with_model_noft
-14.291096690167162,14.360940711290803,0.15012637,0.13669215,0.15998843,0.1532587,0.24628682,0.15364754,0.028025052015039742,2600.0,0.2887180248066341,0.4411564887620694,False,False,True,False,False,False,False
