@@ -1,6 +1,6 @@
 import csv
 
-file_path = 'imputed_nomorph_full_seen_unseen_results_spBLEU_m2m100_mt560_xgb.csv'
+file_path = 'experiment_results\\test_2.csv'
 
 with open(file_path, mode='r') as file:
     reader = csv.reader(file)
@@ -14,7 +14,7 @@ with open(file_path, mode='r') as file:
     
     unseen_dict = dict(zip(headers, third_row))
 
-with open('imputed_nomorph_unseen.txt', 'w') as f:
+with open('test_2.txt', 'w') as f:
     sum_se = 0
     size = 0
     for key, values in unseen_dict.items():

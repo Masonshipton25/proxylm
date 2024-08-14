@@ -2,7 +2,7 @@ import pandas as pd
 import csv
 
 # Load the CSV file into a DataFrame
-df = pd.read_csv('nusa_no_imputed_distances_cleaned.csv')
+df = pd.read_csv('distances\\nusa_imputed_distances_cleaned.csv')
 
 # Extract the first and second columns as lists
 cleaned_source_langs = df.iloc[:, 0].tolist()
@@ -25,8 +25,8 @@ for l in range(len(cleaned_source_langs)):
 
 # print(cleaned_langs[0])
 
-input_file = 'src\proxy_regressor\csv_datasets\old_no_imputed_nusa_experiments.csv'
-output_file = 'src\proxy_regressor\csv_datasets\old_no_imputed_nusa_experiments2.csv'
+input_file = 'experiment_csvs\with_SoftImpute\\new\\nusa_imputed_experiments.csv'
+output_file = 'nusa_imputated_cleaned_experiments.csv'
 
 # Open the input file for reading and the output file for writing
 with open(input_file, mode='r', newline='') as infile, \

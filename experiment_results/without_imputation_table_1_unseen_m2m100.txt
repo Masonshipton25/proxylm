@@ -1,0 +1,124 @@
+cv_rmse: 12.050612739879318
+test_source_ewe_rmse: 
+test_target_ewe_rmse: 
+test_source_mri_rmse: 
+test_target_mri_rmse: 
+test_source_sna_rmse: 
+test_target_sna_rmse: 
+genetic_importance: 0.0
+geographic_importance: 0.31095237
+syntactic_importance: 0.39826286
+inventory_importance: 0.29078478
+phonological_importance: 0.0
+featural_importance: 0.0
+eta: 0.06528119418029989
+n_estimators: 2700.0
+test_source_rmse: 11.443136645363925
+test_target_rmse: 12.947025487194223
+cv_rmse_se: 0.5140612598877266
+test_source_ewe_rmse_se: 
+test_target_ewe_rmse_se: 
+test_source_mri_rmse_se: 
+test_target_mri_rmse_se: 
+test_source_sna_rmse_se: 
+test_target_sna_rmse_se: 
+train_is_seen: False
+nlperf_only: False
+dataset_features: False
+lang_features: True
+with_trfm: False
+with_small100_ft: False
+with_small100_noft: False
+with_model_noft: False
+test_source_amh_rmse: 8.224704346273061
+test_target_amh_rmse: 16.028869776667207
+test_source_tgl_rmse: 11.471285821595679
+test_target_tgl_rmse: 9.7108956354832
+test_source_arz_rmse: 6.765234588501839
+test_target_arz_rmse: 8.570122967010223
+test_source_zul_rmse: 9.308409430612718
+test_target_zul_rmse: 10.110542230549262
+test_source_mar_rmse: 13.836120980355895
+test_target_mar_rmse: 11.909426827258164
+test_source_hye_rmse: 10.883075140465138
+test_target_hye_rmse: 10.189292985014173
+test_source_xho_rmse: 13.34391911513508
+test_target_xho_rmse: 11.357980320510215
+test_source_kan_rmse: 11.84907381484716
+test_target_kan_rmse: 12.70400337063548
+test_source_mya_rmse: 10.14012348263427
+test_target_mya_rmse: 13.824275609100175
+test_source_jav_rmse: 11.829094403814247
+test_target_jav_rmse: 12.638888589390739
+test_source_tam_rmse: 10.90341879973398
+test_target_tam_rmse: 12.009636359980634
+test_source_afr_rmse: 27.41812467924849
+test_target_afr_rmse: 21.96727424689573
+test_source_ind_rmse: 12.385149508825016
+test_target_ind_rmse: 12.490207735298279
+test_source_som_rmse: 10.959281096781197
+test_target_som_rmse: 13.799416615211229
+test_source_wol_rmse: 6.274175199543139
+test_target_wol_rmse: 8.40003268312668
+test_source_khm_rmse: 10.916087362719077
+test_target_khm_rmse: 16.620490887685165
+test_source_bak_rmse: 8.92545262362962
+test_target_bak_rmse: 7.1896814736081875
+test_source_plt_rmse: 13.01300750343967
+test_target_plt_rmse: 16.957726014957352
+test_source_kat_rmse: 11.533019916637745
+test_target_kat_rmse: 11.207824103757227
+test_source_hau_rmse: 5.613688092007581
+test_target_hau_rmse: 24.56233461124997
+test_source_pan_rmse: 13.895459874192545
+test_target_pan_rmse: 14.09538261212018
+test_source_ceb_rmse: 12.37645362667589
+test_target_ceb_rmse: 12.858972081923515
+test_source_ibo_rmse: 11.327783435701285
+test_target_ibo_rmse: 8.578308468034104
+test_source_amh_rmse_se: 0.7328329888167918
+test_target_amh_rmse_se: 0.27524700193369744
+test_source_tgl_rmse_se: 1.0040307633684082
+test_target_tgl_rmse_se: 0.34214188590061323
+test_source_arz_rmse_se: 0.6826114495084932
+test_target_arz_rmse_se: 1.4181381297612858
+test_source_zul_rmse_se: 0.686184213419122
+test_target_zul_rmse_se: 0.8801986769198986
+test_source_mar_rmse_se: 0.36251626708686213
+test_target_mar_rmse_se: 1.31700002668893
+test_source_hye_rmse_se: 0.054953289845720094
+test_target_hye_rmse_se: 0.008595500058887127
+test_source_xho_rmse_se: 0.3712023169897385
+test_target_xho_rmse_se: 0.1982212254552509
+test_source_kan_rmse_se: 1.3910361836740681
+test_target_kan_rmse_se: 1.648723445591514
+test_source_mya_rmse_se: 1.9133023879743918
+test_target_mya_rmse_se: 1.5951361817116276
+test_source_jav_rmse_se: 0.7633338077573683
+test_target_jav_rmse_se: 1.026446477177183
+test_source_tam_rmse_se: 2.020780909512461
+test_target_tam_rmse_se: 1.783366098580778
+test_source_afr_rmse_se: 2.3862743391403276
+test_target_afr_rmse_se: 2.2436959809787953
+test_source_ind_rmse_se: 0.6867339493024495
+test_target_ind_rmse_se: 0.3342400972491574
+test_source_som_rmse_se: 0.617493775135146
+test_target_som_rmse_se: 0.6019722935922056
+test_source_wol_rmse_se: 0.19863936460588283
+test_target_wol_rmse_se: 0.2955570323741718
+test_source_khm_rmse_se: 0.3872794581751209
+test_target_khm_rmse_se: 0.29976074097737154
+test_source_bak_rmse_se: 0.13327286134070762
+test_target_bak_rmse_se: 0.12340744803798806
+test_source_plt_rmse_se: 1.926904526839247
+test_target_plt_rmse_se: 1.662310627966223
+test_source_kat_rmse_se: 0.3902238000296305
+test_target_kat_rmse_se: 0.8327135678114174
+test_source_hau_rmse_se: 0.38114568351246464
+test_target_hau_rmse_se: 0.4299630853225879
+test_source_pan_rmse_se: 0.3624524214610913
+test_target_pan_rmse_se: 0.2570493272397693
+test_source_ceb_rmse_se: 0.05014640495894726
+test_target_ceb_rmse_se: 0.05971409139879274
+test_source_ibo_rmse_se: 0.2553375261230245
+test_target_ibo_rmse_se: 0.4194927902470688
