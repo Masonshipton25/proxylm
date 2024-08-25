@@ -104,23 +104,23 @@ def get_dataframe_nusa(remove_useless_columns=True):
 def get_all_features_combinations():
     combs = []
     
-    # # All
-    # combs.append({"nlperf_only": False,
-    #               "dataset_features": True,
-    #               "lang_features": True,
-    #               "with_trfm": True,
-    #               "with_small100_ft": True,
-    #               "with_small100_noft": True,
-    #               "with_model_noft": True})
-    
-    # Language features only
+    # All
     combs.append({"nlperf_only": False,
-                  "dataset_features": False,
+                  "dataset_features": True,
                   "lang_features": True,
-                  "with_trfm": False,
-                  "with_small100_ft": False,
-                  "with_small100_noft": False,
-                  "with_model_noft": False})
+                  "with_trfm": True,
+                  "with_small100_ft": True,
+                  "with_small100_noft": True,
+                  "with_model_noft": True})
+    
+    # # Language features only
+    # combs.append({"nlperf_only": False,
+    #               "dataset_features": False,
+    #               "lang_features": True,
+    #               "with_trfm": False,
+    #               "with_small100_ft": False,
+    #               "with_small100_noft": False,
+    #               "with_model_noft": False})
     
     # # NLPerf features only
     # combs.append({"nlperf_only": True,
