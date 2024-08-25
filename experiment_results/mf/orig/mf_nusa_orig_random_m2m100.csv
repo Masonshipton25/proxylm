@@ -1,0 +1,2 @@
+cv_rmse,test_rmse,alpha,beta_w,beta_h,beta_z,beta_s,beta_t,cv_rmse_se,test_rmse_se,nlperf_only,dataset_features,lang_features,with_trfm,with_small100_ft,with_small100_noft,with_model_noft
+3.350750714630304,3.9793594997635466,0.0082,0.1,0.1,0.028000000000000004,0.01,0.01,0.13825423238021517,0.5067923065631114,False,False,True,False,False,False,False

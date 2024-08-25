@@ -1,0 +1,53 @@
+cv_rmse: 3.96613940709364
+test_source_btk_rmse: 
+test_target_btk_rmse: 
+test_source_bew_rmse: 
+test_target_bew_rmse: 
+test_source_mad_rmse: 
+test_target_mad_rmse: 
+test_source_mak_rmse: 
+test_target_mak_rmse: 
+test_source_min_rmse: 
+test_target_min_rmse: 
+genetic_importance: 0.112656035
+geographic_importance: 0.21886663
+syntactic_importance: 0.080540106
+inventory_importance: 0.08849476
+phonological_importance: 0.09298156
+featural_importance: 0.29301015
+morphological_importance: 0.11345075
+eta: 0.05558217500125875
+n_estimators: 900.0
+test_source_rmse: 8.686396270011373
+test_target_rmse: 10.376274222321342
+cv_rmse_se: 0.10579043600439376
+test_source_btk_rmse_se: 
+test_target_btk_rmse_se: 
+test_source_bew_rmse_se: 
+test_target_bew_rmse_se: 
+test_source_mad_rmse_se: 
+test_target_mad_rmse_se: 
+test_source_mak_rmse_se: 
+test_target_mak_rmse_se: 
+test_source_min_rmse_se: 
+test_target_min_rmse_se: 
+train_is_seen: False
+nlperf_only: False
+dataset_features: False
+lang_features: True
+with_trfm: False
+with_small100_ft: False
+with_small100_noft: False
+with_model_noft: False
+test_source_ind_rmse: 11.743755516844695
+test_target_ind_rmse: 14.64834810637986
+test_source_jav_rmse: 6.608728430904394
+test_target_jav_rmse: 6.066395674017744
+test_source_sun_rmse: 7.706704862285031
+test_target_sun_rmse: 10.414078886566422
+test_source_ind_rmse_se: 0.5848402374731697
+test_target_ind_rmse_se: 0.38806310217559586
+test_source_jav_rmse_se: 0.5230569474346841
+test_target_jav_rmse_se: 0.6273026376778613
+test_source_sun_rmse_se: 1.0163935930614592
+test_target_sun_rmse_se: 0.8311606528118164

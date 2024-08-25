@@ -1,6 +1,6 @@
 import csv
 
-file_path = 'experiment_results\mf_nusa_imputated_unseen_nllb.csv'
+file_path = 'experiment_results\\new.csv'
 
 with open(file_path, mode='r') as file:
     reader = csv.reader(file)
@@ -14,7 +14,7 @@ with open(file_path, mode='r') as file:
     
     unseen_dict = dict(zip(headers, third_row))
 
-with open('mf_nusa_imputated_unseen_nllb.txt', 'w') as f:
+with open('experiment_results\\new.txt', 'w') as f:
     sum_se = 0
     size = 0
     for key, values in unseen_dict.items():
