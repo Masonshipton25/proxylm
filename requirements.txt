@@ -18,3 +18,4 @@ scipy
 plotly
 spacy
 sentence-transformers
+lightgbm
