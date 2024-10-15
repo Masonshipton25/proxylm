@@ -1,5 +1,5 @@
 import csv
-file_path = 'orig_unseen.csv'
+file_path = 'unseen.csv'
 with open(file_path, mode='r') as file:
     reader = csv.reader(file)
     
@@ -11,7 +11,7 @@ with open(file_path, mode='r') as file:
     third_row = next(reader)
     
     unseen_dict = dict(zip(headers, third_row))
-with open('orig_unseen.txt', 'w') as f:
+with open('unseen.txt', 'w') as f:
     sum_se = 0
     size = 0
     for key, values in unseen_dict.items():
