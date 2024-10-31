@@ -64,6 +64,12 @@ def run_random(regressor_name, dataset_name, regressor_json_path, model_name, sc
             
             # Get prediction
             Y_pred = model_pipeline.perform_prediction(X_test)
+
+            # Append Y_pred to a file for P-values
+            with open("Y_pred_results.txt", "a") as file:
+                file.write(f"Run {i + 1}:\n")
+                file.write(", ".join(map(str, Y_pred)) + "\n")  # Converts Y_pred to a string and writes each value
+
             
             # Test
             test_rmse = np.sqrt(mean_squared_error(Y_test, Y_pred))
