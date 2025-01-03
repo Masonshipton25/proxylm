@@ -1,0 +1,229 @@
+cv_rmse: 4.641841330306862
+test_source_dik_rmse: 
+test_target_dik_rmse: 
+test_source_ewe_rmse: 
+test_target_ewe_rmse: 
+test_source_fao_rmse: 
+test_target_fao_rmse: 
+test_source_hne_rmse: 
+test_target_hne_rmse: 
+test_source_kin_rmse: 
+test_target_kin_rmse: 
+test_source_kir_rmse: 
+test_target_kir_rmse: 
+test_source_lmo_rmse: 
+test_target_lmo_rmse: 
+test_source_mri_rmse: 
+test_target_mri_rmse: 
+test_source_sna_rmse: 
+test_target_sna_rmse: 
+test_source_tat_rmse: 
+test_target_tat_rmse: 
+test_source_tuk_rmse: 
+test_target_tuk_rmse: 
+dataset_size_importance: 0.010090031
+genetic_importance: 0.015822306
+geographic_importance: 0.03884988
+syntactic_importance: 0.013288042
+inventory_importance: 0.010843941
+phonological_importance: 0.008864298
+featural_importance: 0.03688019
+dev_size_importance: 0.012189739
+test_size_importance: 0.0054716174
+train_word_vocab_size_importance: 0.015285278
+dev_word_vocab_size_importance: 0.0030897371
+test_word_vocab_size_importance: 0.034044214
+avg_train_sentence_length_importance: 0.008180159
+avg_dev_sentence_length_importance: 0.007173366
+avg_test_sentence_length_importance: 0.010622026
+train_dev_word_overlap_importance: 0.012130404
+train_test_word_overlap_importance: 0.017285494
+dev_test_word_overlap_importance: 0.036077917
+ttr_train_importance: 0.014674747
+ttr_dev_importance: 0.025929037
+ttr_test_importance: 0.032944556
+train_dev_ttr_distance_importance: 0.025199482
+train_test_ttr_distance_importance: 0.002557744
+dev_test_ttr_distance_importance: 0.006507083
+train_dev_jsd_importance: 0.0069933645
+train_test_jsd_importance: 0.06219265
+dev_test_jsd_importance: 0.008459861
+train_dev_tf_idf_importance: 0.015225008
+train_test_tf_idf_importance: 0.040450294
+dev_test_tf_idf_importance: 0.004779227
+train_dev_st_similarity_importance: 0.013970593
+train_test_st_similarity_importance: 0.0091614
+dev_test_st_similarity_importance: 0.004426134
+eng_target_importance: 0.0036274851
+morphological_importance: 0.0050222655
+trfm_spBLEU_mean_importance: 0.08781
+small100_noft_spBLEU_mean_importance: 0.022286281
+small100_ft_spBLEU_mean_importance: 0.2376873
+m2m100_noft_spBLEU_mean_importance: 0.073906876
+eta: 0.030601801434103244
+n_estimators: 3850.0
+test_source_rmse: 5.8424348365948955
+test_target_rmse: 6.15246346035022
+cv_rmse_se: 0.537444754050654
+test_source_dik_rmse_se: 
+test_target_dik_rmse_se: 
+test_source_ewe_rmse_se: 
+test_target_ewe_rmse_se: 
+test_source_fao_rmse_se: 
+test_target_fao_rmse_se: 
+test_source_hne_rmse_se: 
+test_target_hne_rmse_se: 
+test_source_kin_rmse_se: 
+test_target_kin_rmse_se: 
+test_source_kir_rmse_se: 
+test_target_kir_rmse_se: 
+test_source_lmo_rmse_se: 
+test_target_lmo_rmse_se: 
+test_source_mri_rmse_se: 
+test_target_mri_rmse_se: 
+test_source_sna_rmse_se: 
+test_target_sna_rmse_se: 
+test_source_tat_rmse_se: 
+test_target_tat_rmse_se: 
+test_source_tuk_rmse_se: 
+test_target_tuk_rmse_se: 
+train_is_seen: False
+nlperf_only: False
+dataset_features: True
+lang_features: True
+with_trfm: True
+with_small100_ft: True
+with_small100_noft: True
+with_model_noft: True
+test_source_sin_rmse: 5.74528083501988
+test_target_sin_rmse: 4.169547925476362
+test_source_amh_rmse: 4.290217133772411
+test_target_amh_rmse: 7.177045084248137
+test_source_tgl_rmse: 4.626150783312852
+test_target_tgl_rmse: 3.208821163406977
+test_source_arz_rmse: 0.8166482525502804
+test_target_arz_rmse: 0.8616473591772345
+test_source_kaz_rmse: 6.179068691510363
+test_target_kaz_rmse: 4.161133395988536
+test_source_zul_rmse: 7.371710699378264
+test_target_zul_rmse: 3.825407168946229
+test_source_mar_rmse: 8.657022335643259
+test_target_mar_rmse: 6.6096226214910185
+test_source_hye_rmse: 4.448137773864436
+test_target_hye_rmse: 5.0251919466789206
+test_source_xho_rmse: 11.865788243369208
+test_target_xho_rmse: 9.1090583415355
+test_source_kan_rmse: 3.088727588491353
+test_target_kan_rmse: 5.73712274852334
+test_source_mya_rmse: 2.6012774078302363
+test_target_mya_rmse: 2.2159531903654046
+test_source_jav_rmse: 1.55649419933108
+test_target_jav_rmse: 4.409109676833142
+test_source_tam_rmse: 4.34137779555792
+test_target_tam_rmse: 3.482277130792247
+test_source_afr_rmse: 18.56060324164856
+test_target_afr_rmse: 15.894182832990134
+test_source_ind_rmse: 6.794969271145897
+test_target_ind_rmse: 5.103823600338692
+test_source_som_rmse: 3.0326710437346067
+test_target_som_rmse: 6.561710240033112
+test_source_yor_rmse: 0.859838937196923
+test_target_yor_rmse: 2.7593907994282634
+test_source_wol_rmse: 1.607856157024847
+test_target_wol_rmse: 6.998414451563088
+test_source_bel_rmse: 6.287918088221842
+test_target_bel_rmse: 6.616497400959892
+test_source_cym_rmse: 16.199162256286876
+test_target_cym_rmse: 9.46024694183517
+test_source_ssw_rmse: 9.191931294832774
+test_target_ssw_rmse: 7.495598925760822
+test_source_guj_rmse: 5.3427667647794
+test_target_guj_rmse: 4.398669201694317
+test_source_khm_rmse: 7.406294400129868
+test_target_khm_rmse: 6.064172254247657
+test_source_bak_rmse: 1.8486912839784566
+test_target_bak_rmse: 2.393276913054865
+test_source_plt_rmse: 5.897819257607574
+test_target_plt_rmse: 6.090427085696173
+test_source_kat_rmse: 7.966899928363422
+test_target_kat_rmse: 8.324381685024772
+test_source_hau_rmse: 3.4545489643652885
+test_target_hau_rmse: 14.473199239849993
+test_source_pan_rmse: 8.33070745411779
+test_target_pan_rmse: 3.4967087087007536
+test_source_ceb_rmse: 5.194071137096394
+test_target_ceb_rmse: 3.6936539025543302
+test_source_oci_rmse: 6.674618354423589
+test_target_oci_rmse: 7.166643885051445
+test_source_snd_rmse: 1.1224595779775268
+test_target_snd_rmse: 17.41969361376123
+test_source_ltz_rmse: 6.312907107685315
+test_target_ltz_rmse: 3.31575092740509
+test_source_ibo_rmse: 5.125713347383092
+test_target_ibo_rmse: 5.312913828144408
+test_source_sin_rmse_se: 0.08275008258561276
+test_target_sin_rmse_se: 0.10194103276203399
+test_source_amh_rmse_se: 0.12739368375906812
+test_target_amh_rmse_se: 0.04898905668677493
+test_source_tgl_rmse_se: 0.05579027447807621
+test_target_tgl_rmse_se: 0.09803927475184505
+test_source_arz_rmse_se: 0.14418143164392863
+test_target_arz_rmse_se: 0.157281342410795
+test_source_kaz_rmse_se: 0.08323745074343711
+test_target_kaz_rmse_se: 0.13830945967656302
+test_source_zul_rmse_se: 0.13825492876795512
+test_target_zul_rmse_se: 0.1859971277235909
+test_source_mar_rmse_se: 0.09934899649182753
+test_target_mar_rmse_se: 0.08981115236787302
+test_source_hye_rmse_se: 0.03421943798668632
+test_target_hye_rmse_se: 0.09728587048693586
+test_source_xho_rmse_se: 0.13061060862768195
+test_target_xho_rmse_se: 0.2456843136756871
+test_source_kan_rmse_se: 0.059508082723403743
+test_target_kan_rmse_se: 0.15515129297128916
+test_source_mya_rmse_se: 0.06527899197353992
+test_target_mya_rmse_se: 0.08967787757483031
+test_source_jav_rmse_se: 0.19136595383847754
+test_target_jav_rmse_se: 0.3643207683631591
+test_source_tam_rmse_se: 0.09046575092501496
+test_target_tam_rmse_se: 0.09055020896102305
+test_source_afr_rmse_se: 0.13617294058355686
+test_target_afr_rmse_se: 0.06432883985008009
+test_source_ind_rmse_se: 0.036403453601116346
+test_target_ind_rmse_se: 0.10233056173885013
+test_source_som_rmse_se: 0.07724309569309998
+test_target_som_rmse_se: 0.16123949598104323
+test_source_yor_rmse_se: 0.32231429000412853
+test_target_yor_rmse_se: 0.25840909538256635
+test_source_wol_rmse_se: 0.07391785873096031
+test_target_wol_rmse_se: 0.32673819389989706
+test_source_bel_rmse_se: 0.13262597156963574
+test_target_bel_rmse_se: 0.09370748324273352
+test_source_cym_rmse_se: 0.22484424096121972
+test_target_cym_rmse_se: 0.3719039511957565
+test_source_ssw_rmse_se: 0.22365143121946066
+test_target_ssw_rmse_se: 0.3141482661357375
+test_source_guj_rmse_se: 0.04500672647666647
+test_target_guj_rmse_se: 0.14728287307702675
+test_source_khm_rmse_se: 0.31816931087805694
+test_target_khm_rmse_se: 0.1538291098608331
+test_source_bak_rmse_se: 0.04697848271436603
+test_target_bak_rmse_se: 0.16385113305170806
+test_source_plt_rmse_se: 0.13779664501253064
+test_target_plt_rmse_se: 0.23730255118954371
+test_source_kat_rmse_se: 0.13486718355487992
+test_target_kat_rmse_se: 0.13742088277178063
+test_source_hau_rmse_se: 0.18505644522070053
+test_target_hau_rmse_se: 0.08106204924054805
+test_source_pan_rmse_se: 0.1742533930251115
+test_target_pan_rmse_se: 0.25214117825691634
+test_source_ceb_rmse_se: 0.21249877892078148
+test_target_ceb_rmse_se: 0.2169594226224805
+test_source_oci_rmse_se: 0.18277679309018324
+test_target_oci_rmse_se: 0.19494308210192285
+test_source_snd_rmse_se: 0.24710891524628473
+test_target_snd_rmse_se: 0.18068098593135612
+test_source_ltz_rmse_se: 0.1653528448697522
+test_target_ltz_rmse_se: 0.3909079154094966
+test_source_ibo_rmse_se: 0.07357554917663592
+test_target_ibo_rmse_se: 0.23493016447101386
