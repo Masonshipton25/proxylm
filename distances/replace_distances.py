@@ -1,5 +1,4 @@
 import pandas as pd
-
 from collections import Counter
 
 
@@ -8,7 +7,7 @@ from collections import Counter
 # # Specify the columns you want (by index or name)
 # columns_to_extract = [0, 1]  # For example, to extract the first and third columns (0-based index)
 # # Read the CSV file without headers
-# df = pd.read_csv('experiment_csvs\\URIEL+\\mt560_experiments.csv', header=None, usecols=columns_to_extract)
+# df = pd.read_csv('experiment_csvs\\URIEL\\mt560_experiments.csv', header=None, usecols=columns_to_extract)
 # #89:95
 # # Convert specified columns to lists
 # langs = {f'Column_{i}': df[i].tolist() for i in range(df.shape[1])}
@@ -28,7 +27,7 @@ from collections import Counter
 # # Specify the columns you want (by index or name)
 # columns_to_extract = [2, 3, 4, 5, 6, 7, 8, 9]  # For example, to extract the first and third columns (0-based index)
 # # Read the CSV file without headers
-# df2 = pd.read_csv('distances\\mt560_distances_with_scriptural.csv', header=None, usecols=columns_to_extract)
+# df2 = pd.read_csv('distances\\mt560_distances.csv', header=None, usecols=columns_to_extract)
 # # Skip the first row if it contains headers
 # df2 = df2.iloc[1:]
 # # Convert specified columns to lists
@@ -43,8 +42,8 @@ from collections import Counter
 #     distances_dict[pair] = [distances['Column_0'][counter], distances['Column_1'][counter], distances['Column_2'][counter], distances['Column_3'][counter], distances['Column_4'][counter], distances['Column_5'][counter]]
 #     counter += 1
 # # Read the CSV file without headers
-# df3 = pd.read_csv('experiment_csvs\\URIEL+\\mt560_experiments.csv')
-# # morphological_column = []
+# df3 = pd.read_csv('experiment_csvs\\URIEL\\mt560_experiments.csv')
+# morphological_column = []
 # scriptural_column = []
 # for index, row in df3.iterrows():
 #     counter = 0
@@ -54,17 +53,17 @@ from collections import Counter
 #             start_col = 89
 #             end_col = 89 + len(replacement_values)
 #             if end_col <= len(df3.columns):
-#                 # df3.loc[index, df3.columns[start_col:end_col]] = replacement_values
-#                 # morphological_column.append(distances['Column_6'][counter])
+#                 df3.loc[index, df3.columns[start_col:end_col]] = replacement_values
+#                 morphological_column.append(distances['Column_6'][counter])
 #                 scriptural_column.append(distances['Column_7'][counter])
 #                 break
 #             else:
 #                 print(f"Warning: Column slice {df3.columns[start_col:end_col]} is out of bounds for index {index}")
 #         counter += 1
-# # df3['morphological'] = morphological_column
+# df3['morphological'] = morphological_column
 # df3['scriptural'] = scriptural_column
 # # Save the modified DataFrame back to a CSV file
-# df3.to_csv('src\\proxy_regressor\\csv_datasets\\new_mt560_experiments.csv', index=False)
+# df3.to_csv('src\\proxy_regressor\\csv_datasets\\mt560_experiments.csv', index=False)
 
 
 
@@ -72,7 +71,7 @@ from collections import Counter
 # Specify the columns you want (by index or name)
 columns_to_extract = [2, 3, 4, 5, 6, 7, 8, 9]  # For example, to extract the first and third columns (0-based index)
 # Read the CSV file without headers
-df = pd.read_csv('distances\\nusa_distances_with_scriptural.csv', header=None, usecols=columns_to_extract)
+df = pd.read_csv('distances\\nusa_distances.csv', header=None, usecols=columns_to_extract)
 # Skip the first row if it contains headers
 df = df.iloc[1:]
 # Convert specified columns to lists
@@ -83,17 +82,15 @@ distances = {
  
 distances_dict = {}
 counter = 0
-# for category in ['genetic', 'geographic', 'syntactic', 'inventory', 'phonological', 'featural', 'morphological']:
-for category in ['scriptural']:
+for category in ['genetic', 'geographic', 'syntactic', 'inventory', 'phonological', 'featural', 'morphological', 'scriptural']:
     specific_distances = []
-    # for distance in distances['Column_' + str(counter)]:
-    for distance in distances['Column_7']:
+    for distance in distances['Column_' + str(counter)]:
         for i in range(4):
             specific_distances.append(distance)
     distances_dict[category] = specific_distances
     counter += 1
-df2 = pd.read_csv('experiment_csvs\\URIEL+\\nusa_experiments.csv')
+df2 = pd.read_csv('experiment_csvs\\URIEL\\nusa_experiments.csv')
 for key in distances_dict:
     df2[key] = distances_dict[key]
 # Save the modified DataFrame back to a CSV file
-df2.to_csv('src\\proxy_regressor\\csv_datasets\\new_nusa_experiments.csv', index=False)
+df2.to_csv('src\\proxy_regressor\\csv_datasets\\nusa_experiments.csv', index=False)
