@@ -1,5 +1,5 @@
 import csv
-file_path = 'uriel+_experiments\\URIEL++\\with_scriptural\\unseen_results\\full_seen_unseen_results_spBLEU_m2m100_mt560_xgb.csv'
+file_path = 'uriel+_experiments\\URIEL++\\without_scriptural\\with_dd\\full_seen_unseen_results_spBLEU_m2m100_mt560_xgb.csv'
 with open(file_path, mode='r') as file:
     reader = csv.reader(file)
     
