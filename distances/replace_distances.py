@@ -27,7 +27,7 @@ for pair, count in pair_counts.items():
 # Specify the columns you want (by index or name)
 columns_to_extract = [2, 3, 4, 5, 6, 7, 8]  # For example, to extract the first and third columns (0-based index)
 # Read the CSV file without headers
-df2 = pd.read_csv('distances\\new_mt560_distances.csv', header=None, usecols=columns_to_extract)
+df2 = pd.read_csv('distances\\new_dd_mt560_distances.csv', header=None, usecols=columns_to_extract)
 # Skip the first row if it contains headers
 df2 = df2.iloc[1:]
 # Convert specified columns to lists
@@ -64,30 +64,30 @@ df3.to_csv('src\\proxy_regressor\\csv_datasets\\mt560_experiments.csv', index=Fa
 
 
 
-# # NUSA
-# # Specify the columns you want (by index or name)
-# columns_to_extract = [2, 3, 4, 5, 6, 7, 8]  # For example, to extract the first and third columns (0-based index)
-# # Read the CSV file without headers
-# df = pd.read_csv('distances\\new_nusa_distances.csv', header=None, usecols=columns_to_extract)
-# # Skip the first row if it contains headers
-# df = df.iloc[1:]
-# # Convert specified columns to lists
-# distances = {
-#     f'Column_{i}': [float(item.strip('[]')) for item in df.iloc[:, i].tolist()]
-#     for i in range(df.shape[1])
-# }
+# NUSA
+# Specify the columns you want (by index or name)
+columns_to_extract = [2, 3, 4, 5, 6, 7, 8]  # For example, to extract the first and third columns (0-based index)
+# Read the CSV file without headers
+df = pd.read_csv('distances\\new_dd_nusa_distances.csv', header=None, usecols=columns_to_extract)
+# Skip the first row if it contains headers
+df = df.iloc[1:]
+# Convert specified columns to lists
+distances = {
+    f'Column_{i}': [float(item.strip('[]')) for item in df.iloc[:, i].tolist()]
+    for i in range(df.shape[1])
+}
  
-# distances_dict = {}
-# counter = 0
-# for category in ['genetic', 'geographic', 'syntactic', 'inventory', 'phonological', 'featural', 'morphological']:
-#     specific_distances = []
-#     for distance in distances['Column_' + str(counter)]:
-#         for i in range(4):
-#             specific_distances.append(distance)
-#     distances_dict[category] = specific_distances
-#     counter += 1
-# df2 = pd.read_csv('experiment_csvs\\URIEL\\nusa_experiments.csv')
-# for key in distances_dict:
-#     df2[key] = distances_dict[key]
-# # Save the modified DataFrame back to a CSV file
-# df2.to_csv('src\\proxy_regressor\\csv_datasets\\nusa_experiments.csv', index=False)
+distances_dict = {}
+counter = 0
+for category in ['genetic', 'geographic', 'syntactic', 'inventory', 'phonological', 'featural', 'morphological']:
+    specific_distances = []
+    for distance in distances['Column_' + str(counter)]:
+        for i in range(4):
+            specific_distances.append(distance)
+    distances_dict[category] = specific_distances
+    counter += 1
+df2 = pd.read_csv('experiment_csvs\\URIEL\\nusa_experiments.csv')
+for key in distances_dict:
+    df2[key] = distances_dict[key]
+# Save the modified DataFrame back to a CSV file
+df2.to_csv('src\\proxy_regressor\\csv_datasets\\nusa_experiments.csv', index=False)
